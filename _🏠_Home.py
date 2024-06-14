@@ -25,7 +25,7 @@ st.sidebar.subheader("Navigation")
 sections = ["🏠Home", "🗃️Dataset", "📊Column Visualizations", "🧔Age Metrics", "🫀CHDRisk Metrics"]
 selection = st.sidebar.radio("Go to", sections)
 
-data = pd.read_csv('C:/Users/Administrator/Desktop/itban4/heart1/chd/heart_disease.csv')
+data = pd.read_csv('heart_disease.csv')
 
 from sklearn.impute import SimpleImputer
 imputer = SimpleImputer(strategy='most_frequent')
